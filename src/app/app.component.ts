@@ -21,6 +21,10 @@ export class AppComponent {
     return this.oauthService.getRefreshToken();
   }
 
+  get idToken() {
+    return this.oauthService.getIdToken();
+  }
+
   constructor(
     private http: HttpClient,
     private oauthService: OAuthService) {
